@@ -51,5 +51,5 @@ jobs:
       - name: Deploy to EKS
         run: |
           # configserver 폴더 내에 k8s 폴더가 있다고 가정
-          kubectl apply -f ./k8s/configserver-depl.yml
+          kubectl apply -f ./k8s/config-depl.yml
           kubectl rollout restart deployment config-deployment -n lgcns
